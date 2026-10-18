@@ -34,7 +34,7 @@ on Windows, macOS and Linux.
 - [x] T2 — Root Cargo workspace + `crates/core` + `crates/runtime` skeletons (route: inline, trivial stubs)
 - [x] T3 — CI workflow: fmt, clippy, tests, frontend build on 3 OSes (route: inline, one mechanical file)
 - [x] T4 — Verify locally: `cargo fmt --check`, `cargo clippy`, `cargo test`, `pnpm build`
-- [ ] T5 — Work-unit commit
+- [x] T5 — Work-unit commit (`f0f67a6`)
 
 ## Acceptance criteria
 
