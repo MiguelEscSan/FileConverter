@@ -1,0 +1,10 @@
+[package]
+name = "converter-core"
+description = "Conversion domain: formats, capabilities, the Converter port and the route planner"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[lints]
+workspace = true
