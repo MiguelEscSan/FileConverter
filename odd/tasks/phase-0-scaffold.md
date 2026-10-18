@@ -60,6 +60,18 @@ Notes:
 - `tauri::generate_context!` needs `apps/desktop/dist` at compile time, so CI builds the frontend first.
 - CSP blocks every network origin; `devCsp` only adds the Vite HMR websocket.
 
+## Review
+
+- Native review (4 lenses, risk high, user granted) on `f0f67a6..2f6ce4a`: approved and acknowledged,
+  lineage `review-2711a49137d1d0ab`. Risk and resilience lenses: no findings.
+- Advisory, non-blocking follow-ups for the start of Phase 1:
+  - Remove the Tauri template `greet` demo (`App.tsx`, `lib.rs`) and set the `index.html` title.
+  - Replace the tautological version smoke tests; Phase 1 domain tests supersede them.
+  - Single source of truth for the app version (workspace, `package.json`, `tauri.conf.json`).
+  - Type-check `vite.config.ts` (`tsc -b` or include `tsconfig.node.json`).
+  - Add `--locked` to the README check commands to match CI.
+  - Deduplicate the root and `apps/desktop` `.gitignore` rules.
+
 ## Next step
 
-Commit, then the LibreOffice packaging spike (separate feature, needs download approval).
+Phase 0 is complete. Next: LibreOffice packaging spike (needs download approval), then Phase 1.
