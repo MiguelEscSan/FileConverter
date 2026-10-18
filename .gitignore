@@ -1,0 +1,20 @@
+# Rust
+/target/
+
+# Tauri generated
+apps/desktop/src-tauri/gen/schemas/
+
+# Node
+node_modules/
+apps/desktop/dist/
+*.local
+
+# Sidecar and bundled engine binaries are fetched by scripts, never committed
+binaries/
+resources/engines/
+
+# Editors / OS
+.idea/
+.DS_Store
+Thumbs.db
+*.log

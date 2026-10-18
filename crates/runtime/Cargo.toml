@@ -1,0 +1,13 @@
+[package]
+name = "converter-runtime"
+description = "Job queue, scheduling, process runner and temporary workspaces"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+converter-core.workspace = true
+
+[lints]
+workspace = true
